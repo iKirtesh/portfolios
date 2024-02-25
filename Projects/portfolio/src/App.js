@@ -8,7 +8,7 @@ function App() {
           <h1 className="text-5xl font-bold">
             I'm Kirtesh Admute
           </h1>
-          Coming Soon...
+          Coming Soon ...
         </header>
       </div>
   );
