@@ -18,7 +18,7 @@
         "start": "Mar 2024",
         "end": "Present"
       },
-      "image": "assets/kirtesh_portfolio.png",
+      "image": "https://media.licdn.com/dms/image/D5622AQHYoCfGtsNIaQ/feedshare-shrink_800/0/1714798757243?e=2147483647&v=beta&t=TONZ6SMVxz3yr3iRdRZ92WZNOW38-K9oDGFp7Ob-KOk",
       "description": "Project Beta is a mobile application for tracking fitness activities and monitoring health metrics.",
       "tags": ["React JS", "Tailwind CSS"],
       "viewCode": "https://github.com/username/project-beta",
