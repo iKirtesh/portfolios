@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Savitribai Phule Pune University",
+    "grade": "Distinction",
+    "class": "Bachelor of Engineering - Information Technology",
+    "description": "I have done my graducation in Bachelor's degree in Information Technology at Savitribai Phule Pune University, Pune. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.\n",
+    "date": {
+      "start": "Dec 2021",
+      "end": "Present"
+    },
+    "logo": "assets/SPPU.png"
+  },
+  {
+    "name": "PES Modern College of Arts, Science and Commerce, Pune",
+    "grade": "Distinction",
+    "class": "HSC(XII), Science with Computer",
+    "description": "I completed my class 12 high school education at PES Modern College of Arts, Science and Commerce, Pune, where I studied Science with Computer Science.",
+    "date": {
+      "start": "Jul 2017",
+      "end": "March 2019"
+    },
+    "logo": "assets/modernCollege.png"
+  },
+    {
+        "name": "Ravindra High School, Bhoom",
+        "grade": "A",
+        "class": "SSC(X)",
+        "description": "I completed my class 10 high school education at Ravindra High School, Bhoom.",
+        "date": {
+        "start": "Jul 2014",
+        "end": "March 2017"
+        },
+        "logo": "assets/Ravindra.png"
+    }
+]
