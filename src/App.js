@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Education/>
           <Contact/>
           <SpeedInsights projectId="prj_xZte5IHFywUhbYpeZOkZwNoLfMrg" />
+          <Analytics id="prj_xZte5IHFywUhbYpeZOkZwNoLfMrg" />
           <Footer/>
       </div>
   );
