@@ -2,12 +2,13 @@ import React from 'react';
 
 const Project = ({ project }) => {
     return (
-        <div className="border-2 rounded-2xl p-4 mb-4 shadow-lg">
+        <div className="border-2 rounded-2xl p-3 mb-4 shadow-lg">
             <div className="mb-4">
                 <img
                     src={project.image}
                     alt={project.name}
-                    className="w-full h-40 sm:h-60 md:h-80 rounded-lg object-cover"
+                    className="w-full
+                     h-40 sm:h-60 md:h-60 rounded-lg object-cover"
                 />
             </div>
             <div className="mb-4">

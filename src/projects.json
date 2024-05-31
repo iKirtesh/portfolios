@@ -7,7 +7,7 @@
         "end": "Feb 2024"
       },
       "image": "https://miro.medium.com/v2/resize:fit:1400/0*C--bgtCmKgtQusxY",
-      "description": "Project Alpha is a web application that allows users to track their tasks and manage their time efficiently.",
+      "description": "Online EBook is a web application that allows users to order and read e-books online.",
       "tags": ["Servlet", "JSP", "Javascript","JDBC", "MySQL" ],
       "viewCode": "https://github.com/username/project-alpha",
       "liveApp": "https://project-alpha.example.com"
@@ -19,7 +19,7 @@
         "end": "Present"
       },
       "image": "https://media.licdn.com/dms/image/D5622AQFT3I-Db13Nfw/feedshare-shrink_2048_1536/0/1717091450386?e=1720051200&v=beta&t=bFaq9rrgtj53MrvY8cVkgQJyDQS3Eq6Pu1NZVZjMQ5c",
-      "description": "Project Beta is a mobile application for tracking fitness activities and monitoring health metrics.",
+      "description": "Kirtesh's Portfolio is a personal website that showcases my projects and skills.",
       "tags": ["React JS", "Tailwind CSS"],
       "viewCode": "https://github.com/username/project-beta",
       "liveApp": "https://project-beta.example.com"
@@ -31,7 +31,7 @@
         "end": "Jan 2023"
       },
       "image": "https://media.licdn.com/dms/image/D5612AQEcD2j8Zr-EMw/article-cover_image-shrink_720_1280/0/1672377128490?e=2147483647&v=beta&t=vq3cpu9sj3pWIWTNI32MMuAYSjqfKAZrKe-TAF1GiKg",
-      "description": "Project Gamma is an e-commerce platform that provides a seamless shopping experience with advanced search and recommendation features.",
+      "description": "Project Gamma is a web application that helps users manage their tasks and projects.",
       "tags": ["Python", "Django", "PostgreSQL"],
       "viewCode": "https://github.com/username/project-gamma",
       "liveApp": "https://project-gamma.example.com"

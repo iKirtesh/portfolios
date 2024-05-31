@@ -46,54 +46,61 @@ const Contact = () => {
     };
 
     return (
-        <div className="container mx-auto py-8 px-4 lg:px-8">
-            <h1 className="text-2xl font-bold mb-8 text-center">Contact Me</h1>
-            <p className="text-lg mb-8 text-center">Feel free to send me a message. I'll get back to you as soon as possible.</p>
-            <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
-                <div className="mb-4">
-                    <label htmlFor="name" className="block text-gray-700">Name</label>
-                    <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg"
-                    />
+        <div className="container mx-auto py-5 px-2 lg:px-52 text-white m-10 bg-gradient-to-tr from-indigo-900 to-pink-500 rounded-2xl drop-shadow-lg">
+            <div className="grid gap-2 md:grid-cols-2">
+                <div className="card p-6  rounded-lg">
+                    <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
+                    <p className="text-md mb-4">Feel free to send me a message. I'll get back to you as soon as possible.</p>
+                    <p className="text-md">You can also reach out to me on my social media channels for any inquiries or collaboration opportunities. I look forward to hearing from you!</p>
                 </div>
-                <div className="mb-4">
-                    <label htmlFor="email" className="block text-gray-700">Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg"
-                    />
+                <div className="card p-6 rounded-lg">
+                    <form onSubmit={handleSubmit}>
+                        <div className="mb-2">
+                            <label htmlFor="name" className="block text-md text-gray-300">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                                className="w-full px-2 py-1.5 text-gray-800  border border-gray-300 rounded-lg"
+                            />
+                        </div>
+                        <div className="mb-2">
+                            <label htmlFor="email" className="block text-md text-gray-300">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                                className="w-full px-3 py-2 border text-gray-800  border-gray-300 rounded-lg"
+                            />
+                        </div>
+                        <div className="mb-2">
+                            <label htmlFor="message" className="block text-gray-300">Message</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                required
+                                className="w-full px-3 py-2 border text-gray-800 border-gray-300 rounded-lg"
+                                rows="4"
+                            />
+                        </div>
+                        <button
+                            type="submit"
+                            className="w-full bg-violet-600 text-white px-3 py-2 rounded-lg hover:bg-indigo-600 transition duration-300"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                    <ToastContainer />
                 </div>
-                <div className="mb-4">
-                    <label htmlFor="message" className="block text-gray-700">Message</label>
-                    <textarea
-                        name="message"
-                        id="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg"
-                        rows="6"
-                    />
-                </div>
-                <button
-                    type="submit"
-                    className="w-full bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition duration-300"
-                >
-                    Send Message
-                </button>
-            </form>
-            <ToastContainer />
+            </div>
         </div>
     );
 };

@@ -8,8 +8,8 @@ const ProfileCard = () => {
 
     return (
         <div className="container mx-auto px-4 lg:px-8 py-8">
-            <div className="bg-white border-2 rounded-2xl p-6 flex flex-col lg:flex-row items-center">
-                <div className="w-full lg:w-1/3 mb-6 lg:mb-0">
+            <div className="bg-white border-2 rounded-2xl p-4 flex flex-col lg:flex-row items-center shadow-zinc-500  ">
+                <div className="w-full lg:w-1/4 mb-3 lg:mb-0">
                     <img
                         src={profilePhoto}
                         alt={name}

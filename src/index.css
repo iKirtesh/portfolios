@@ -22,10 +22,15 @@ code {
 /* Add custom color*/
 
 .bg-navbar {
-  background-color: #1a1b23;
+  background-color: #0d1215;
 }
 
-
+.bg-footer {
+  background-color: #0d1215;
+/*  curve above corners*/
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+}
 
 
 /* Loader CSS*/
@@ -79,4 +84,15 @@ code {
   75% {
     transform: translateY(-70%);
   }
+}
+
+
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optionally, hide scrollbar for specific elements */
+.element-class::-webkit-scrollbar {
+  display: none;
 }

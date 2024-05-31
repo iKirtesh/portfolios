@@ -36,10 +36,10 @@ const SkillSection = ({ title, skills }) => (
 
 const Skills = () => {
     return (
-        <div className="container mx-auto py-8 px-8">
+        <div className="container mx-auto py-2">
             <h1 className="text-2xl font-bold mb-2 text-center">Skills</h1>
-            <p className="text-lg text-center mb-8">Here are some of my skills on which I have been working on for the past 5 years.</p>
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <p className="text-lg text-center px-4 mb-8">Here are some of my skills on which I have been working on for the past 5 years.</p>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                 <SkillSection title="Backend" skills={skillsData.backend}/>
                 <SkillSection title="SDE Designs" skills={skillsData.sde_designs}/>
                 <SkillSection title="Frontend" skills={skillsData.frontend}/>

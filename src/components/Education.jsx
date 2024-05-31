@@ -14,7 +14,7 @@ const EducationItem = ({ education }) => {
     }
 
     return (
-        <div className="border-2 rounded-2xl p-6 mb-4 flex flex-col md:flex-row items-center md:items-start">
+        <div className="border-2 shadow-lg rounded-2xl px-10 py-6 mb-4 flex flex-col md:flex-row items-center md:items-start">
             <img
                 src={imgError ? defaultLogo : logo}
                 alt={education.name}
@@ -24,8 +24,8 @@ const EducationItem = ({ education }) => {
             <div>
                 <h2 className="text-xl font-bold">{education.name}</h2>
                 <p className="text-gray-600">{`${education.date.start} - ${education.date.end}`}</p>
-                <p className="text-gray-800">{education.class}</p>
-                <p className="text-gray-800">Grade: {education.grade}</p>
+                <p className="text-gray-800 text-md">{education.class}</p>
+                <p className="text-gray-800 text-md">Grade: {education.grade}</p>
                 <p className="mt-2">{education.description}</p>
             </div>
         </div>
