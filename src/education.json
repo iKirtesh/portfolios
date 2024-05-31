@@ -8,7 +8,7 @@
       "start": "Dec 2021",
       "end": "Present"
     },
-    "logo": "assets/SPPU.png"
+    "logo": "assets/images/SPPU.png"
   },
   {
     "name": "PES Modern College of Arts, Science and Commerce, Pune",
@@ -19,7 +19,7 @@
       "start": "Jul 2017",
       "end": "March 2019"
     },
-    "logo": "assets/modernCollege.png"
+    "logo": "assets/images/modernCollege.png"
   },
     {
         "name": "Ravindra High School, Bhoom",
@@ -30,6 +30,6 @@
         "start": "Jul 2014",
         "end": "March 2017"
         },
-        "logo": "assets/Ravindra.png"
+        "logo": "assets/images/Ravindra.png"
     }
 ]

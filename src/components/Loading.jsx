@@ -1,43 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const Loading = () => {
-    const [isVisible, setIsVisible] = useState(true);
-
+    // Add style for the loader animation
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsVisible(false);
-        }, 2000);
-
-        return () => clearTimeout(timer);
+        const style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = `
+            @keyframes loader {
+                0%, 50%, 100% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(70%);
+                }
+                75% {
+                    transform: translateY(-70%);
+                }
+            }
+        `;
+        document.head.appendChild(style);
     }, []);
 
-    const fadeOutAnimation = {
-        animation: 'fadeOut 2s forwards',
-    };
-
-    const keyframes = `
-    @keyframes fadeOut {
-      from { opacity: 1; }
-      to { opacity: 0; }
-    }
-  `;
-
-    const containerStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        width: '100vw',
-        backgroundColor: '#101011',
-        color: 'white',
-    };
-
     return (
-        <div style={containerStyle}>
-            <style>{keyframes}</style>
-            <div style={isVisible ? fadeOutAnimation : { display: 'none' }} className="text-center">
-                <h1 className="text-4xl font-bold">Re.</h1>
-                <p className="font-semibold">Loading the experience</p>
+        <div className="flex items-center justify-center min-h-screen bg-[#212121]">
+            <div className="relative w-6 aspect-[1/2] loader">
+                <div className="absolute inset-0 m-auto w-full aspect-square rounded-full bg-gradient-to-b from-yellow-400 to-green-600 animate-loader"></div>
+                <div className="absolute inset-0 m-auto w-full aspect-square rounded-full bg-gradient-to-t from-cyan-400 to-green-600 animate-loader" style={{ animationDelay: '0.75s' }}></div>
             </div>
         </div>
     );

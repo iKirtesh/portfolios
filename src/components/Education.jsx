@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import educationData from '../education.json';
-import defaultLogo from '../assets/defaultLogo.png'; // Import the default logo
+import defaultLogo from '../assets/images/defaultLogo.png'; // Import the default logo
 
 const EducationItem = ({ education }) => {
     const [imgError, setImgError] = useState(false);
