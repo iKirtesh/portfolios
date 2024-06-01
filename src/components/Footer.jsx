@@ -6,22 +6,22 @@ const Footer = () => {
     return (
         <footer className="flex flex-col space-y-10 justify-center p-10 text-white bg-footer ">
 
-            <nav className="flex justify-center flex-wrap gap-6 text-gray-400 font-medium">
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="hover:text-violet-500" href="#">Home</a>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="hover:text-violet-500" href="#">About</a>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="hover:text-violet-500" href="#">Skills</a>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="hover:text-violet-500" href="#">Experience</a>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="hover:text-violet-500" href="#">Projects</a>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="hover:text-violet-500" href="#">Education</a>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="hover:text-violet-500" href="#">Contact</a>
-            </nav>
+            {/*<nav className="flex justify-center flex-wrap gap-6 text-gray-400 font-medium">*/}
+            {/*    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
+            {/*    <a className="hover:text-violet-500" href="#">Home</a>*/}
+            {/*    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
+            {/*    <a className="hover:text-violet-500" href="#">About</a>*/}
+            {/*    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
+            {/*    <a className="hover:text-violet-500" href="#">Skills</a>*/}
+            {/*    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
+            {/*    <a className="hover:text-violet-500" href="#">Experience</a>*/}
+            {/*    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
+            {/*    <a className="hover:text-violet-500" href="#">Projects</a>*/}
+            {/*    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
+            {/*    <a className="hover:text-violet-500" href="#">Education</a>*/}
+            {/*    /!* eslint-disable-next-line jsx-a11y/anchor-is-valid *!/*/}
+            {/*    <a className="hover:text-violet-500" href="#">Contact</a>*/}
+            {/*</nav>*/}
 
             <div className="flex justify-center space-x-5">
                 {/*<a href="https://facebook.com" target="_blank" rel="noopener noreferrer">*/}

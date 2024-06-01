@@ -10,8 +10,8 @@ const Contact = () => {
         message: ''
     });
 
-    const [isSent, setIsSent] = useState(false);
-    const [error, setError] = useState('');
+    const [, setIsSent] = useState(false);
+    const [, setError] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -46,7 +46,8 @@ const Contact = () => {
     };
 
     return (
-        <div className="container mx-auto py-5 px-2 lg:px-52 text-white m-10 bg-gradient-to-tr from-indigo-900 to-pink-500 rounded-2xl drop-shadow-lg">
+        <div
+         className="container mx-auto py-5 px-2 lg:px-52 text-white m-10 bg-gradient-to-tr from-indigo-900 to-pink-500 rounded-2xl drop-shadow-lg">
             <div className="grid gap-2 md:grid-cols-2">
                 <div className="card p-6  rounded-lg">
                     <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>

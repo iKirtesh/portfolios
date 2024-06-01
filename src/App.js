@@ -40,16 +40,17 @@ function App() {
     return (
         <div className={`App ${darkMode ? 'dark' : ''}`}>
             <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-            <HeroSection darkMode={darkMode} />
-            <Skills darkMode={darkMode} />
-            <ProjectsList darkMode={darkMode} />
-            <Education darkMode={darkMode} />
-            <Contact darkMode={darkMode} />
+            <section id="about"><HeroSection /></section>
+            <section id="skills"><Skills /></section>
+            <section id="projects"><ProjectsList /></section>
+            <section id="education"><Education /></section>
+            <section id="contact"><Contact /></section>
             <SpeedInsights projectId="prj_xZte5IHFywUhbYpeZOkZwNoLfMrg" />
             <Analytics id="prj_xZte5IHFywUhbYpeZOkZwNoLfMrg" />
             <Footer />
         </div>
     );
+
 }
 
 export default App;

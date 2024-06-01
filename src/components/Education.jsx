@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import educationData from '../education.json';
 import defaultLogo from '../assets/images/defaultLogo.png'; // Import the default logo
 
@@ -14,7 +15,11 @@ const EducationItem = ({ education }) => {
     }
 
     return (
-        <div className="border-2 shadow-lg rounded-2xl px-10 py-6 mb-4 flex flex-col md:flex-row items-center md:items-start">
+        <motion.div
+            className="border-2 shadow-lg rounded-2xl px-10 py-6 mb-4 flex flex-col md:flex-row items-center md:items-start"
+            whileHover={{ scale: 1.05, boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}
+            transition={{ duration: 0.2 }}
+        >
             <img
                 src={imgError ? defaultLogo : logo}
                 alt={education.name}
@@ -28,7 +33,7 @@ const EducationItem = ({ education }) => {
                 <p className="text-gray-800 text-md">Grade: {education.grade}</p>
                 <p className="mt-2">{education.description}</p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

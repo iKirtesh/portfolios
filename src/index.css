@@ -96,3 +96,25 @@ code {
 .element-class::-webkit-scrollbar {
   display: none;
 }
+
+
+/* Styles for the inverted circle effect */
+.invert-circle {
+  position: relative;
+  display: inline-block;
+}
+
+.invert-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: #000;
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease-out;
+  z-index: 1;
+}

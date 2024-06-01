@@ -22,7 +22,7 @@ const SkillComponent = ({ name, link }) => {
 };
 
 const SkillSection = ({ title, skills }) => (
-    <div className="mb-8 p-4">
+    <div className="mb-8 p-8 border-2 rounded-2xl">
         <div className="flex items-center justify-center mb-4">
             <h2 className="text-xl font-bold">{title}</h2>
         </div>
