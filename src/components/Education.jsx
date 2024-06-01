@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import educationData from '../education.json';
 import defaultLogo from '../assets/images/defaultLogo.png'; // Import the default logo
+import AnimatedScroller from './AnimatedScroller';
 
 const EducationItem = ({ education }) => {
     const [imgError, setImgError] = useState(false);
@@ -15,6 +16,7 @@ const EducationItem = ({ education }) => {
     }
 
     return (
+
         <motion.div
             className="border-2 shadow-lg rounded-2xl px-10 py-6 mb-4 flex flex-col md:flex-row items-center md:items-start"
             whileHover={{ scale: 1.05, boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}
@@ -39,6 +41,7 @@ const EducationItem = ({ education }) => {
 
 const Education = () => {
     return (
+        <AnimatedScroller>
         <div className="container mx-auto py-8 px-4 lg:px-8">
             <h1 className="text-2xl font-bold mb-2 text-center">Education</h1>
             <p className="text-lg text-center mb-8">My education has been a journey of self-discovery and growth. My
@@ -47,6 +50,7 @@ const Education = () => {
                 <EducationItem key={index} education={education}/>
             ))}
         </div>
+        </AnimatedScroller>
     );
 };
 

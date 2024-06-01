@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Projects from './Projects';
 import projectsData from '../projects.json';
+import AnimatedScroller from './AnimatedScroller';
 
 const ProjectsList = () => {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -14,22 +15,24 @@ const ProjectsList = () => {
     };
 
     return (
-        <div className="container mx-auto py-1 px-8">
-            <h1 className="text-2xl font-bold mb-2 text-center">Projects</h1>
-            <p className="text-lg text-center mb-8">
-                I have worked on a wide range of projects. From web apps to deployment. Here are some of my projects.
-            </p>
-            <div className="grid gap-8" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))' }}>
-                {projectsData.projects.map((project, index) => (
-                    <div key={index} onClick={() => handleProjectClick(project)}>
-                        <Projects project={project} />
-                    </div>
-                ))}
+        <AnimatedScroller>
+            <div className="container mx-auto py-1 px-8">
+                <h1 className="text-2xl font-bold mb-2 text-center">Projects</h1>
+                <p className="text-lg text-center mb-8">
+                    I have worked on a wide range of projects. From web apps to deployment. Here are some of my projects.
+                </p>
+                <div className="grid gap-8" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))' }}>
+                    {projectsData.projects.map((project, index) => (
+                        <div key={index} onClick={() => handleProjectClick(project)}>
+                            <Projects project={project} />
+                        </div>
+                    ))}
+                </div>
+                {selectedProject && (
+                    <ProjectModal project={selectedProject} onClose={handleCloseModal} />
+                )}
             </div>
-            {selectedProject && (
-                <ProjectModal project={selectedProject} onClose={handleCloseModal} />
-            )}
-        </div>
+        </AnimatedScroller>
     );
 };
 
@@ -85,7 +88,7 @@ const ProjectModal = ({ project, onClose }) => {
                     </div>
                 </div>
 
-            {/*    viewCode and liveApp button at the end of modal*/}
+                {/*    viewCode and liveApp button at the end of modal*/}
                 <div className="flex justify-between mt-10">
                     {project.liveApp && (
                         <a

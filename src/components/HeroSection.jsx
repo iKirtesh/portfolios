@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import personalData from '../personal.json';
+import AnimatedScroller from "./AnimatedScroller";
 
 const ProfileCard = () => {
     const { name, JD, description, profilePhoto } = personalData;
@@ -23,6 +24,7 @@ const ProfileCard = () => {
     }, [controls, inView]);
 
     return (
+        <AnimatedScroller>
         <div className="container mx-auto px-4 lg:px-8 py-8">
             <motion.div
                 ref={ref}
@@ -48,6 +50,7 @@ const ProfileCard = () => {
                 </div>
             </motion.div>
         </div>
+        </AnimatedScroller>
     );
 };
 

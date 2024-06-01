@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AnimatedScroller from './AnimatedScroller';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -46,6 +47,7 @@ const Contact = () => {
     };
 
     return (
+        <AnimatedScroller>
         <div
          className="container mx-auto py-5 px-2 lg:px-52 text-white m-10 bg-gradient-to-tr from-indigo-900 to-pink-500 rounded-2xl drop-shadow-lg">
             <div className="grid gap-2 md:grid-cols-2">
@@ -103,7 +105,8 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-    );
+        </AnimatedScroller>
+            );
 };
 
 export default Contact;
