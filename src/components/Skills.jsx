@@ -65,7 +65,7 @@ const Skills = () => {
         <AnimatedScroller>
             <div className="container mx-auto py-2">
                 <h1 className="text-2xl font-bold mb-2 text-center">Skills</h1>
-                <p className="text-lg text-center px-4 mb-8">Here are some of my skills on which I have been working on for the past 5 years.</p>
+                <p className="text-lg text-center px-4 mb-8">Here are some of my skills on which I have been working on for the past 1 years.</p>
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                     {Object.entries(skillsData).map(([sectionTitle, skills], index) => (
                         <motion.div
